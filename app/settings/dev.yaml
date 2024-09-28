@@ -1,0 +1,4 @@
+# 개발 환경 설정
+app:
+  debug: true
+  log_level: debug

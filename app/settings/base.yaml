@@ -1,0 +1,4 @@
+# 공통 설정 (필요한 경우에만 사용)
+app:
+  name: mago
+  version: 1.0.0

@@ -1,0 +1,4 @@
+# 알파 환경 설정
+app:
+  debug: false
+  log_level: info

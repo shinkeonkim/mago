@@ -1,0 +1,1 @@
+CREATE DATABASE mago_db;
