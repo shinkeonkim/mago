@@ -1,0 +1,20 @@
+# Ignore environment file
+.env
+
+# Ignore log files
+*.log
+
+# Ignore OS generated files
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Ignore IDE files
+
+.vscode/
+.idea/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
