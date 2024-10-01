@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+django-unfold = "*"
+django-import-export = "*"
+django-guardian = "*"
+django-simple-history = "*"
+
+[dev-packages]
+pre-commit = "*"
+black = "*"
+isort = "*"
+flake8 = "*"
+mypy = "*"
+
+[requires]
+python_version = "3.12"
