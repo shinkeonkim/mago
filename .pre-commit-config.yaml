@@ -1,0 +1,33 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0 # 최신 버전 확인 후 설정
+  hooks:
+  - id: trailing-whitespace # 불필요한 공백 제거
+  - id: end-of-file-fixer # 파일의 마지막 줄 공백 추가
+  - id: check-added-large-files # 너무 큰 파일 커밋 방지
+
+- repo: https://github.com/psf/black
+  rev: 23.7.0 # 최신 버전 확인 후 설정
+  hooks:
+  - id: black
+    language_version: python3.12 # 프로젝트에서 사용하는 Python 버전 명시
+
+- repo: https://github.com/PyCQA/isort
+  rev: 5.13.2
+  hooks:
+  - id: isort
+    args: ["--profile", "black"]
+#
+- repo: https://github.com/pycqa/flake8
+  rev: 6.1.0
+  hooks:
+  - id: flake8
+    additional_dependencies: ["flake8-bugbear", "flake8-comprehensions"]
+    args:
+    - --max-line-length=120
+    - --extend-ignore=E203
+
+- repo: https://github.com/pre-commit/mirrors-mypy
+  rev: v0.991 # 최신 버전 확인 후 설정
+  hooks:
+  - id: mypy
